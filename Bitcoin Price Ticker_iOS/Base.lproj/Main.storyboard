@@ -40,7 +40,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9A-aU-MX8">
-                                                <rect key="frame" x="100" y="15" width="182" height="50"/>
+                                                <rect key="frame" x="100" y="15" width="171" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="NZN-FP-Prj"/>
                                                 </constraints>
@@ -48,8 +48,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-pZ-Qmr">
-                                                <rect key="frame" x="302" y="15" width="51" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEf-pZ-Qmr">
+                                                <rect key="frame" x="291" y="15" width="62" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LlN-71-CUm"/>
                                                 </constraints>
@@ -66,7 +66,6 @@
                                             <constraint firstItem="pEf-pZ-Qmr" firstAttribute="leading" secondItem="I9A-aU-MX8" secondAttribute="trailing" constant="20" id="VZF-y3-Rhh"/>
                                             <constraint firstItem="I9A-aU-MX8" firstAttribute="top" secondItem="R5U-bK-Fe5" secondAttribute="top" constant="15" id="cKC-86-Us2"/>
                                             <constraint firstAttribute="bottom" secondItem="pEf-pZ-Qmr" secondAttribute="bottom" constant="15" id="hqD-JH-iEJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="pEf-pZ-Qmr" secondAttribute="trailing" id="szF-TP-PO0"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -93,6 +92,11 @@
                             <constraint firstItem="xgE-H2-MF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zxK-73-h5q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bitCoinLabel" destination="I9A-aU-MX8" id="Fxe-sh-jwb"/>
+                        <outlet property="currencyLabel" destination="pEf-pZ-Qmr" id="c70-iK-mh3"/>
+                        <outlet property="currencyPicker" destination="Ul5-s9-K4z" id="1ix-NC-niu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
