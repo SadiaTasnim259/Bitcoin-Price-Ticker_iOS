@@ -15,6 +15,7 @@
 		04A669902A893B2400F53E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6698E2A893B2400F53E4E /* LaunchScreen.storyboard */; };
 		04AC7D312A8A462500C63A95 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D302A8A462500C63A95 /* CoinManager.swift */; };
 		04AC7D332A8A4A6F00C63A95 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */; };
+		04AC7D352A8A9CF200C63A95 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D342A8A9CF200C63A95 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		04A669912A893B2400F53E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AC7D302A8A462500C63A95 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		04AC7D342A8A9CF200C63A95 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				04A669832A893B2200F53E4E /* AppDelegate.swift */,
 				04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */,
 				04A669852A893B2200F53E4E /* SceneDelegate.swift */,
+				04AC7D342A8A9CF200C63A95 /* CoinModel.swift */,
 				04AC7D302A8A462500C63A95 /* CoinManager.swift */,
 				04A669872A893B2200F53E4E /* ViewController.swift */,
 				04A669892A893B2200F53E4E /* Main.storyboard */,
@@ -148,6 +151,7 @@
 				04A669882A893B2200F53E4E /* ViewController.swift in Sources */,
 				04A669842A893B2200F53E4E /* AppDelegate.swift in Sources */,
 				04AC7D332A8A4A6F00C63A95 /* URLConstant.swift in Sources */,
+				04AC7D352A8A9CF200C63A95 /* CoinModel.swift in Sources */,
 				04A669862A893B2200F53E4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
