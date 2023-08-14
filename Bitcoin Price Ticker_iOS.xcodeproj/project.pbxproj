@@ -16,6 +16,8 @@
 		04AC7D312A8A462500C63A95 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D302A8A462500C63A95 /* CoinManager.swift */; };
 		04AC7D332A8A4A6F00C63A95 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */; };
 		04AC7D352A8A9CF200C63A95 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D342A8A9CF200C63A95 /* CoinModel.swift */; };
+		04AC7D3A2A8A9EA300C63A95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D392A8A9EA300C63A95 /* NetworkManager.swift */; };
+		04AC7D3C2A8A9EBA00C63A95 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC7D3B2A8A9EBA00C63A95 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		04AC7D302A8A462500C63A95 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		04AC7D342A8A9CF200C63A95 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		04AC7D392A8A9EA300C63A95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04AC7D3B2A8A9EBA00C63A95 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,9 @@
 		04A669822A893B2200F53E4E /* Bitcoin Price Ticker_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				04A669832A893B2200F53E4E /* AppDelegate.swift */,
-				04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */,
-				04A669852A893B2200F53E4E /* SceneDelegate.swift */,
+				04AC7D362A8A9E3300C63A95 /* Application */,
+				04AC7D372A8A9E5100C63A95 /* Constant */,
+				04AC7D382A8A9E7300C63A95 /* Network Manager */,
 				04AC7D342A8A9CF200C63A95 /* CoinModel.swift */,
 				04AC7D302A8A462500C63A95 /* CoinManager.swift */,
 				04A669872A893B2200F53E4E /* ViewController.swift */,
@@ -74,6 +78,32 @@
 				04A669912A893B2400F53E4E /* Info.plist */,
 			);
 			path = "Bitcoin Price Ticker_iOS";
+			sourceTree = "<group>";
+		};
+		04AC7D362A8A9E3300C63A95 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04A669832A893B2200F53E4E /* AppDelegate.swift */,
+				04A669852A893B2200F53E4E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		04AC7D372A8A9E5100C63A95 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				04AC7D322A8A4A6F00C63A95 /* URLConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		04AC7D382A8A9E7300C63A95 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04AC7D392A8A9EA300C63A95 /* NetworkManager.swift */,
+				04AC7D3B2A8A9EBA00C63A95 /* NetworkError.swift */,
+			);
+			path = "Network Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AC7D312A8A462500C63A95 /* CoinManager.swift in Sources */,
+				04AC7D3C2A8A9EBA00C63A95 /* NetworkError.swift in Sources */,
 				04A669882A893B2200F53E4E /* ViewController.swift in Sources */,
 				04A669842A893B2200F53E4E /* AppDelegate.swift in Sources */,
+				04AC7D3A2A8A9EA300C63A95 /* NetworkManager.swift in Sources */,
 				04AC7D332A8A4A6F00C63A95 /* URLConstant.swift in Sources */,
 				04AC7D352A8A9CF200C63A95 /* CoinModel.swift in Sources */,
 				04A669862A893B2200F53E4E /* SceneDelegate.swift in Sources */,
