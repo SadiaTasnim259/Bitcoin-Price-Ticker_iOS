@@ -23,6 +23,24 @@ class ViewController: UIViewController {
         currencyPicker.delegate = self
         currencyPicker.dataSource = self
         coinCurrencyModel.delegate = self
+        
+        showActivityIndicator()
+    }
+    
+    var activityView: UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
+    
+    func showActivityIndicator() {
+        if !activityView.isAnimating{
+            activityView.center = self.view.center
+            self.view.addSubview(activityView)
+            activityView.startAnimating()
+        }
+    }
+
+    func hideActivityIndicator(){
+        if activityView.isAnimating{
+            activityView.stopAnimating()
+        }
     }
 }
 
@@ -34,6 +52,7 @@ extension ViewController:UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         currencyLabel.text = coinManager.currencyArray[row]
         coinCurrencyModel.getBitCoinRate(currency: coinManager.currencyArray[row])
+        hideActivityIndicator()
     }
 }
 
@@ -50,9 +69,11 @@ extension ViewController:UIPickerViewDataSource{
 }
 
 extension ViewController: CoinCurrencyDelegate{
+    
     func showBitCoinRate(rate: Double?) {
         guard let bitCoin = rate else{return}
-        let bitCoinString = String(format: "%.1f", bitCoin)
+        let bitCoinString = String(format: "%.2f", bitCoin)
+        
         bitCoinLabel.text = bitCoinString
     }
     
