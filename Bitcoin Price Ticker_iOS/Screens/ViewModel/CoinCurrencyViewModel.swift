@@ -17,6 +17,7 @@ class CoinCurrencyModel{
     
     func getBitCoinRate(currency:String){
         let URL = API.baseURL+currency+"?apikey="+API.apiKey
+        //print(URL)
         NetworkManager.shared.httpRequest(urlString: URL, httpMethodType: .GET, respnseType: CoinModel.self) { result in
             DispatchQueue.main.async {
                 switch result {
